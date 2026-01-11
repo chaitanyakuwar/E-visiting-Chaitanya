@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chaitanya Kuwar | E-Visiting Card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 360px; /* desktop & mobile friendly */
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0px 0px 14px rgba(0,0,0,0.3);
+        padding-bottom: 20px;
+        transition: transform 0.4s ease;
+      }
+
+      /* Zoom only on desktop */
+      @media (hover: hover) {
+        .container:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      .logo {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .logo img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .info {
+        text-align: center;
+        padding: 10px 20px;
+      }
+
+      h2 {
+        margin: 10px 0 5px;
+        font-size: 22px;
+      }
+
+      p {
+        margin: 6px 0;
+        font-size: 16px;
+        color: #444;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .cta {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 12px;
+      }
+
+      .cta a {
+        width: 75%;
+        background-color: #63c1ff;
+        padding: 12px;
+        color: white;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 15px;
+      }
+
+      /* Tablet */
+      @media (min-width: 768px) {
+        .container {
+          max-width: 350px;
+        }
+      }
+
+      /* Very small devices */
+      @media (max-width: 360px) {
+        h2 {
+          font-size: 20px;
+        }
+        .cta a {
+          width: 85%;
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="Chaitanya_kuwar.jpeg" alt="Profile" />
+      </div>
+
+      <div class="info">
+        <h2>Chaitanya Kuwar</h2>
+        <p>Website Developer</p>
+        <p>
+          <i class="fas fa-map-marker-alt"></i> Nandurbar, Maharashtra
+        </p>
+      </div>
+
+      <div class="cta">
+        <a href="tel:7719001056">📞 7719001056</a>
+      </div>
+
+      <div class="cta">
+        <a href="https://wa.me/7719001056">💬 WhatsApp</a>
+      </div>
+
+      <div class="cta">
+        <a href="mailto:chaitanyakuwar16@email.com">✉️ Email</a>
+      </div>
+    </div>
+  </body>
+</html>
